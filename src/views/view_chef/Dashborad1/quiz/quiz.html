@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/quiz.css" />
+  </head>
+
+  <body id="z_body" onload="loadCookie()">
+    <nav id="quiz_nav">
+      <div id="z_logo_container"><img src="./assets/logo (2).png" alt="logo" id="z_logo"></div>
+     <div><h3 id="cookies"></h3></div>
+      <div><button type="button" onclick="logout()" id="logoutBtn">Quitter le test pour le test suivant</button></div>
+    </nav>
+    <div class="bgimg">
+    <main id="z_container">
+        <div>
+          <div class="flip-box" id="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <p id="front">Règles de l'épreuve psychotechnique</p>
+                <br />
+                <h6>Survoller pour en savoir plus</h6>
+              </div>
+              <div class="flip-box-back">
+                <p id="z_quizBrief">
+                  - Ce test Psychotechnique est Pour évaluer votre Personnalité
+                  "TikTak Administration". <br />
+                  - Il y'a 10 questions: <br />
+                  Chacune a une durée comprise entre 5 et 10secondes.<br />
+                  - Plusieurs bonnes réponses sont enviseagebles <br>
+
+                  -Une seule mauvaise réponse annule les points <br>
+                  -Quitter le test avant la fin est synonyme d'abandon <br>
+                  -Les Questions majeures comportes plus de temps et rapporte plus de point.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <div>
+      <button type="button" onclick="startQuiz()" id="startQuizBtn">Débuter le test!</button>
+    </div>
+    
+    <div id="demo"></div>
+  </div>
+
+    </main>
+    <!-- <footer></footer> -->
+    <script src="./js/quiz.js"></script>
+  </body>
+</html>

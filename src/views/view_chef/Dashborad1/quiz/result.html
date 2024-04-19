@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/result.css" />
+    <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <header>
+     <a href="#"><i class="fas fa-chevron-circle-up" id="scroll-up"></i></a>  <!--Tharaa-->
+     <nav class="navbar">
+      <img
+        src="./assets/logo (2).png"
+        alt="logo picture with one word"
+        class="logo"
+      />
+      <div class="nav-list hidden">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><button type="button" onclick="logout()" id="logoutBtn">LogOut</button></li>
+        </ul>
+      </div>
+      <div class="social-icons hidden">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/eng_farah92/?r=nametag">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/zsamamah/projectTwo-QuizWebsite">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/farah-habarnih/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <div class="toggle-btn">
+        <i class="fa fa-bars"></i>
+      </div>
+    </header>
+    <main>
+      <!-- Tharaa comment-->
+      <div id="A_resultContainer"> 
+      <div id="th_Result" class="th_Result">
+        <h1 id="th_Status" class="th_Status"></h1>
+        <i id="iconId" class="fas fa-check-circle"></i>
+        <h2>Score: </h2>
+        <h2 id="th_Score"></h2>
+        <p id="th_Comment"></p>
+      </div>
+      <!-- Result table_Aya............................... -->
+      <div>
+      <table id="table" class="showTable" >
+        <tr class="tableHead">
+      <th class="question">Question</th>
+      <th class="answer">Ta réponse</th>
+      <th class="A_state">Statut</th>
+    </tr>
+     </table>
+    </div>
+                  <a href="#table" onclick="tableResult()"><p id="show"   > Voir les resultats</p></a>
+                  <!-- end of result table............................ -->
+     </div>
+    </main>
+    <script src="./js/result.js"></script>
+    </body>
+    </html>
